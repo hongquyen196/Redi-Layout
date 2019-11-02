@@ -1,0 +1,188 @@
+<div class="container">
+    <div class="title">
+        <img src="../../assets/img/ranking/title-ranking.png" width="50%" alt="">
+        <div class="coins">
+            <span>12.050.969</span>
+            <img src="../../assets/img/ranking/bg-title.png" width="80%" alt="">
+        </div>
+    </div>
+    <div class="two-table">
+        <table class="table-left">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Thành viên</th>
+                    <th>Exp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listLeft; let i = index;">
+                    <td class="col-no">
+                        <img *ngIf="i == 0" class="top-img" src="../../assets/img/ranking/gold.png" alt="">
+                        <img *ngIf="i == 1" class="top-img" src="../../assets/img/ranking/silver.png" alt="">
+                        <img *ngIf="i == 2" class="top-img" src="../../assets/img/ranking/bronze.png" alt="">
+                        <span *ngIf="i > 2">{{i + 1}}</span>
+                    </td>
+                    <td class="col-no">
+                        <img class="avatar-img" [src]="item.avatar" alt="avatar">
+                    </td>
+                    <td class="col-user">
+                        {{item.name}}
+                    </td>
+                    <td class="col-role">
+                        <span>{{item.role}}</span>
+                    </td>
+                    <td class="col-exp">
+                        {{item.exp}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table-right">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Thành viên</th>
+                    <th>Exp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listRight; let i = index;">
+                    <td class="col-no">
+                        <span>{{i + 6}}</span>
+                    </td>
+                    <td class="col-no">
+                        <img class="avatar-img" [src]="item.avatar" alt="avatar">
+                    </td>
+                    <td class="col-user">
+                        {{item.name}}
+                    </td>
+                    <td class="col-role">
+                        {{item.role}}
+                    </td>
+                    <td class="col-exp">
+                        {{item.exp}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        <div class="countdown">
+            <div class="bg_countdown">
+                <div class="bloc-time days" data-init-value="24">
+                    <div class="figure days days-1">
+                        <span class="top">2</span>
+                        <span class="top-back">
+                            <span>2</span>
+                        </span>
+                        <span class="bottom">2</span>
+                        <span class="bottom-back">
+                            <span>2</span>
+                        </span>
+                    </div>
+
+                    <div class="figure days days-2">
+                        <span class="top">4</span>
+                        <span class="top-back">
+                            <span>4</span>
+                        </span>
+                        <span class="bottom">4</span>
+                        <span class="bottom-back">
+                            <span>4</span>
+                        </span>
+                    </div>
+                    <span class="count-title">Days</span>
+                </div>
+                <div class="figuredots hours">:</div>
+                <div class="bloc-time hours" data-init-value="0">
+                    <div class="figure hours hours-1">
+                        <span class="top">2</span>
+                        <span class="top-back">
+                            <span>2</span>
+                        </span>
+                        <span class="bottom">2</span>
+                        <span class="bottom-back">
+                            <span>2</span>
+                        </span>
+                    </div>
+
+                    <div class="figure hours hours-2">
+                        <span class="top">4</span>
+                        <span class="top-back">
+                            <span>4</span>
+                        </span>
+                        <span class="bottom">4</span>
+                        <span class="bottom-back">
+                            <span>4</span>
+                        </span>
+                    </div>
+
+                    <span class="count-title">Hours</span>
+                </div>
+                <div class="figuredots hours">:</div>
+                <div class="bloc-time min" data-init-value="1">
+                    <div class="figure min min-1">
+                        <span class="top">0</span>
+                        <span class="top-back">
+                            <span>0</span>
+                        </span>
+                        <span class="bottom">0</span>
+                        <span class="bottom-back">
+                            <span>0</span>
+                        </span>
+                    </div>
+
+                    <div class="figure min min-2">
+                        <span class="top">0</span>
+                        <span class="top-back">
+                            <span>0</span>
+                        </span>
+                        <span class="bottom">0</span>
+                        <span class="bottom-back">
+                            <span>0</span>
+                        </span>
+                    </div>
+
+                    <span class="count-title">Minutes</span>
+                </div>
+                <div class="figuredots hours">:</div>
+                <div class="bloc-time sec" data-init-value="0">
+                    <div class="figure sec sec-1">
+                        <span class="top">0</span>
+                        <span class="top-back">
+                            <span>0</span>
+                        </span>
+                        <span class="bottom">0</span>
+                        <span class="bottom-back">
+                            <span>0</span>
+                        </span>
+                    </div>
+
+                    <div class="figure sec sec-2">
+                        <span class="top">0</span>
+                        <span class="top-back">
+                            <span>0</span>
+                        </span>
+                        <span class="bottom">0</span>
+                        <span class="bottom-back">
+                            <span>0</span>
+                        </span>
+                    </div>
+                    <span class="count-title">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="title">
+            <img src="../../assets/img/ranking/title-ranking.png" width="50%" alt="">
+        <div class="coins">
+            <span>12.050.969</span>
+            <img src="../../assets/img/ranking/bg-title.png" width="80%" alt="">
+        </div>
+    </div> -->
+</div>

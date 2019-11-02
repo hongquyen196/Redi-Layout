@@ -1,0 +1,234 @@
+.contain {
+    background-color: #ea4614;
+    background: url(src\assets\img\win\bg.png);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Archivo Narrow';
+}
+.contain div{
+    margin-left: 0;
+    margin-right: 0;
+}
+.congratulation {
+    padding-right: calc(-15 / 1366 * 100vw);
+    padding-left: calc(-15 / 1366 * 100vw);
+    padding-top: calc(60 / 1366 * 100vw);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: calc(60 / 1366 * 100vw);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    color: #f7e6b2;
+    height: calc(150 / 1366 * 100vw);
+    /* padding-top: 2.1rem; */
+}
+
+
+.congratulation img {
+    height: calc(120 / 1366 * 100vw);
+    position: absolute;
+    left: 0;
+}
+
+.congratulation span {
+    position: relative;
+    top: calc(15 / 1366 * 100vw);
+    /* margin-top: calc(25 / 1366 * 100vw); */
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.rank {
+    padding-top: calc(50 / 1366 * 100vw);
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* padding-left: calc(50 / 1366 * 100vw);
+    padding-right: calc(50 / 1366 * 100vw); */
+}
+
+.rank .rank-item {
+    width: 20%;
+    text-align: center;
+}
+
+.rank-item .avatar {
+    display: flex;
+    justify-content: center;
+}
+
+.rank-item .name {
+    margin-top: calc(8 / 1366 * 100vw);
+    text-align: center;
+    color: #F3EBA3;
+    font-size: calc(22 / 1366 * 100vw);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.rank-item .avatar .crows {
+    position: relative;
+    top: calc(-30 / 1366 * 100vw);
+    right: calc(-50 / 1366 * 100vw);
+    z-index: 0;
+    height: calc(45 / 1366 * 100vw);
+}
+
+.rank-item .avatar .user-image {
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+    left: calc(-30 / 1366 * 100vw);
+    height: calc(100 / 1366 * 100vw);
+    width: calc(100 / 1366 * 100vw);
+    background: #fff;
+}
+
+.rank-1 .avatar .crows {
+    top: calc(-30 / 1366 * 100vw);
+    right: calc(-56 / 1366 * 100vw);
+}
+
+.rank-1 .avatar .user-image {
+    border: calc(3 / 1366 * 100vw) solid #edb317;
+    height: calc(115 / 1366 * 100vw);
+    width: calc(115 / 1366 * 100vw);
+}
+
+.rank-2 .avatar .user-image {
+    border: calc(3 / 1366 * 100vw) solid #f59231;
+}
+
+.rank-3 .avatar .user-image {
+    border: calc(3 / 1366 * 100vw) solid #f6e7ab;
+}
+
+.rank-4 .avatar .user-image {
+    border: calc(3 / 1366 * 100vw) solid #c6b1a1;
+}
+
+.rank-item.rank-1 {
+    margin-top: 0rem;
+}
+
+.rank-item.rank-2 {
+    margin-top: calc(55 / 1366 * 100vw);
+}
+
+.rank-item.rank-3 {
+    margin-top: calc(75 / 1366 * 100vw);
+}
+
+.rank-item.rank-4 {
+    margin-top: calc(115 / 1366 * 100vw);
+}
+
+.rank-item .point {
+    color: #FFF;
+    width: calc(150 / 1366 * 100vw);
+    height: calc(40 / 1366 * 100vw);
+    font-size: calc(20 / 1366 * 100vw);
+    font-weight: bold;
+    margin: auto;
+    padding-top: calc(7 / 1366 * 100vw);
+    border-radius: calc(25 / 1366 * 100vw);
+    border: 1px solid #C6B1A1;
+    background-color: rgba(230, 113, 109, 0.2);
+    background-size: 110%;
+    background-position: center;
+}
+
+.point::after {
+    color: #FFF;
+    font-size: calc(10 / 1366 * 100vw);
+    content: ' RDC';
+}
+
+.coins {
+    position: relative;
+    background: url(src\assets\img\win\coins.png);
+    background-size: cover;
+    height: calc(120 / 1366 * 100vw);
+}
+
+.rank-name {
+    position: relative;
+    top: 2rem;
+    margin: auto;
+    /* width: 50%; */
+    height: calc(100% - 135 / 1366 * 100vw);
+    /* border: 0.3rem solid #fbf7e1;
+    border-radius: 0.5rem; */
+    text-transform: uppercase;
+    color: #ffffff;
+    overflow-y: hidden;
+}
+
+.rank-name img {
+    position: absolute;
+    overflow-y: hidden;
+    z-index: 0;
+    transform: translate(-50%);
+    width: calc(100 / 1366 * 100vw);
+}
+
+.rank-name .rank-text {
+    position: relative;
+    z-index: 1;
+}
+
+.rank-name .rank-text .number {
+    font-size: calc(90 / 1366 * 100vw);
+    margin: auto;
+    margin-top: calc(-15 / 1366 * 100vw);
+}
+
+.rank-name .rank-text .label {
+    font-size: calc(20 / 1366 * 100vw);
+    color: #ffffff;
+    position: relative;
+    top: -10px;
+}
+
+.rank-1 .rank-name .number {
+    color: #cb792d !important;
+}
+
+.rank-2 .rank-name .number {
+    color: #ffffff !important;
+}
+
+.rank-3 .rank-name .number {
+    color: #ffffff !important;
+}
+
+.rank-4 .rank-name .number {
+    color: #877368 !important;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .rank-name img {
+        position: absolute;
+        overflow-y: hidden;
+        z-index: 0;
+        transform: translate(50%);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contain{
+        height: 100%;
+    }
+    .rank-container{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .congratulation{
+        padding-top: calc(380 / 1366 * 100vw);
+    }
+}
