@@ -1,0 +1,141 @@
+.container {
+    text-transform: uppercase;
+    background-image: url(src\assets\img\ranking\bg-ranking.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2%;
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.coins span {
+    color: #FFDC68;
+    font-size: calc(210.24/3/1366*100vw);
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.coins span::after {
+    content: 'RDC';
+    font-size: calc(79/3/1366*100vw);
+    font-weight: bold;
+    position: absolute;
+}
+
+.coins img {
+    position: absolute;
+    left: 10%;
+    z-index: 0;
+}
+
+.two-table {
+    display: flex;
+    padding: 0 3% 3%;
+}
+
+table {
+    width: 50%;
+    border-spacing: 0px;
+}
+
+thead th {
+    height: calc(170/3/1366*100vw);
+    font-size: calc(75/3/1366*100vw);
+    font-weight: bold;
+    color: wheat;
+}
+
+tbody tr {
+    background-image: url(src\assets\img\ranking\bg-row.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(190/3/1366*100vw);
+    vertical-align: middle;
+}
+
+tbody td {
+    font-size: calc(75/3/1366*100vw);
+    font-weight: bold;
+    color: #913D00;
+}
+
+.col-no {
+    width: 9%;
+    text-align: center;
+    font-size: calc(100/3/1366*100vw);
+}
+
+.col-user {
+    width: 30%;
+    text-align: left;
+}
+
+.col-role {
+    width: 20%;
+    text-align: center;
+}
+
+.col-exp {
+    width: 20%;
+    text-align: center;
+}
+
+.top-img {
+    width: calc(100/3/1366*100vw);
+    padding-top: 3px;
+}
+
+.avatar-img {
+    width: calc(125/3/1366*100vw);
+    padding-top: 3px;
+}
+
+@media only screen and (min-width: 1300px) {
+    .container {
+        height: max-content;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .two-table {
+        display: initial;
+        margin: 0;
+    }
+    table {
+        width: 100%;
+        padding: 0 7%;
+    }
+    tbody tr {
+        height: calc(390/3/1366*100vw);
+    }
+    thead th {
+        font-size: calc(65/3/600*100vw);
+    }
+    tbody td {
+        font-size: calc(70/3/600*100vw);
+    }
+    .top-img {
+        width: calc(100/3/600*100vw);
+        padding-top: 3px;
+    }
+    .avatar-img {
+        width: calc(125/3/600*100vw);
+        padding-top: 3px;
+    }
+    .col-no {
+        width: 10%;
+        font-size: calc(100/3/600*100vw);
+    }
+    .col-role {
+        width: 21%;
+    }
+    .table-right thead {
+        display: none;
+    }
+}
