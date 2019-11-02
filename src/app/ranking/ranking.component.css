@@ -95,12 +95,12 @@ tbody td {
     width: calc(125/3/1366*100vw);
     padding-top: 3px;
 }
-
+/* 
 @media only screen and (min-width: 1300px) {
     .container {
         height: max-content;
     }
-}
+} */
 
 @media only screen and (max-width: 600px) {
     .two-table {
