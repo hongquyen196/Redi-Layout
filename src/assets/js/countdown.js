@@ -10,7 +10,7 @@ var Countdown = {
 
     // Initialize the countdown  
     init: function () {
-        this.$el =  $('.countdown');
+        this.$el = $('.countdown');
         // DOM
         this.$ = {
             days: this.$el.find('.bloc-time.days .figure'),
