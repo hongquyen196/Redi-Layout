@@ -6,6 +6,33 @@
     background-position: center;
     padding: 2%;
     height: 100%;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
 
 .title {
@@ -37,8 +64,9 @@
 
 .countdown {
     margin-top: calc(32rem*0.8);
-    margin-bottom: 30px;
+    margin-bottom: 1%;
 }
+
 
 /* @media only screen and (min-width: 1300px) {
     .container {

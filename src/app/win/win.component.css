@@ -3,12 +3,40 @@
     background: url(src\assets\img\win\bg.png);
     background-size: cover;
     background-position: center;
-    font-family: 'Archivo Narrow';
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
-.contain div{
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.contain div {
     margin-left: 0;
     margin-right: 0;
 }
+
 .congratulation {
     padding-right: calc(-15 / 1366 * 100vw);
     padding-left: calc(-15 / 1366 * 100vw);
@@ -23,7 +51,6 @@
     height: calc(150 / 1366 * 100vw);
     /* padding-top: 2.1rem; */
 }
-
 
 .congratulation img {
     height: calc(120 / 1366 * 100vw);
@@ -207,7 +234,9 @@
 .rank-4 .rank-name .number {
     color: #877368 !important;
 }
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
     .rank-name img {
         position: absolute;
         overflow-y: hidden;
@@ -217,10 +246,10 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .contain{
+    .contain {
         height: 100%;
     }
-    .rank-container{
+    .rank-container {
         position: fixed;
         width: 100%;
         bottom: 0;
@@ -228,7 +257,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .congratulation{
+    .congratulation {
         padding-top: calc(380 / 1366 * 100vw);
     }
 }

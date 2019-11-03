@@ -7,6 +7,7 @@ import { RankingComponent } from './ranking/ranking.component';
 import { WinComponent } from './win/win.component';
 import { CoinPrizeComponent } from './coin-prize/coin-prize.component';
 import { TestComponent } from './test/test.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TestComponent } from './test/test.component';
     RankingComponent,
     WinComponent,
     CoinPrizeComponent,
-    TestComponent
+    TestComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
