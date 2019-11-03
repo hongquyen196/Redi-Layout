@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
   }
 
+  page1: Boolean = true;
+
+  ngOnInit() {
+      setInterval(() => {
+        console.log(1);
+        this.page1 = !this.page1;
+      }, 5000);
+  }
 }
