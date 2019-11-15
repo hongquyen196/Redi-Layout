@@ -5,6 +5,7 @@ import { WinComponent } from './win/win.component';
 import { CoinPrizeComponent } from './coin-prize/coin-prize.component';
 import { TestComponent } from './test/test.component';
 import { IndexComponent } from './index/index.component';
+import { LuckyComponent } from './lucky/lucky.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'win',
     component: WinComponent
+  },
+  {
+    path: 'lucky',
+    component: LuckyComponent
   } 
 ];
 
