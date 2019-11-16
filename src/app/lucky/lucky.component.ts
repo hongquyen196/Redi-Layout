@@ -12,7 +12,7 @@ export class LuckyComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       odometer.innerHTML = this.randomNumbers();
-    }, 1000);
+    }, 2000);
   }
 
   randomNumbers = () => {
