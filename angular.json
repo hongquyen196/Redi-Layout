@@ -26,7 +26,7 @@
                         "styles": [
                             "src/styles.css",
                             "src/assets/css/countdown.css",
-                            "src/assets/css/odometer-theme-slot-machine.css"
+                            "src/assets/css/odometer-theme-car-redi.css"
                         ],
                         "scripts": [
                             "node_modules/jquery/dist/jquery.min.js",
