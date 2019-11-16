@@ -1,111 +1,115 @@
-.container {
-    background-image: url(src/assets/img/lucky/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    -webkit-animation-duration: 6s;
-    animation-duration: 6s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    text-align: center;
-    font-family: 'Be Vietnam';
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
+    .container {
+        background-image: url(src/assets/img/lucky/bg-lucky.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        -webkit-animation-duration: 6s;
+        animation-duration: 6s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        text-align: center;
+        font-family: 'Be Vietnam';
     }
-    100% {
-        opacity: 1;
+    
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-    100% {
-        opacity: 1;
+    
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
     }
-}
-
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
-
-.title {
-    text-align: center;
-    padding: 20px 0;
-}
-
-.avatar {
-    display: flex;
-    justify-content: center;
-}
-
-.avatar .user-image {
-    border: calc(3 / 1366 * 100vw) solid #fff;
-    border-radius: 50%;
-    z-index: 1;
-    position: relative;
-    height: 10vw;
-    width: 10vw;
-    background: #fff;
-}
-
-.name span {
-    color: #FFDC68;
-    font-size: 3.5vw;
-    position: relative;
-    z-index: 1;
-}
-
-.exp span {
-    color: white;
-    font-size: 3vw;
-    position: relative;
-    z-index: 1;
-}
-
-.exp span>span {
-    font-size: 1.5vw;
-    font-weight: bold;
-}
-
-.number-container {
-    position: absolute;
+    
+    .title {
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .avatar {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .avatar .user-image {
+        border: calc(3 / 1366 * 100vw) solid #fff;
+        border-radius: 50%;
+        z-index: 1;
+        position: relative;
+        height: 10vw;
+        width: 10vw;
+        background: #fff;
+    }
+    
+    .name span {
+        color: #FFDC68;
+        font-size: 3.5vw;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .exp span {
+        color: white;
+        font-size: 3vw;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .exp span>span {
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    
+    .number-container {
+        /* position: absolute;
     top: 13%;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
-    -webkit-transform: translateZ(0);
-}
-
-.number-container .odometer {
-    z-index: 1;
-    /* bottom: 0.2em; */
-}
-
-.number-container img {
-    position: absolute;
-    z-index: 0;
-    width: 50%;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media screen and (max-width: 800px) {
-    .avatar .user-image {
-        height: 15vw;
-        width: 15vw;
+    -webkit-transform: translateZ(0); */
+        padding-top: 10rem;
     }
-    /* .number-container .odometer-container {
-        font-size: 20vw;
-    } */
-}
+    
+    .number-container .odometer {
+        z-index: 1;
+        /* bottom: 0.2em; */
+    }
+    
+    .number-container img {
+        position: absolute;
+        z-index: 0;
+        width: 50%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .avatar .user-image {
+            height: 25vw;
+            width: 25vw;
+        }
+        .name span {
+            font-size: 5.5vw;
+        }
+        .exp span {
+            font-size: 5vw;
+        }
+    }
