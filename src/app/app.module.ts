@@ -8,6 +8,7 @@ import { WinComponent } from './win/win.component';
 import { CoinPrizeComponent } from './coin-prize/coin-prize.component';
 import { TestComponent } from './test/test.component';
 import { IndexComponent } from './index/index.component';
+import { LuckyComponent } from './lucky/lucky.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { IndexComponent } from './index/index.component';
     WinComponent,
     CoinPrizeComponent,
     TestComponent,
+    LuckyComponent,
     IndexComponent
   ],
   imports: [
