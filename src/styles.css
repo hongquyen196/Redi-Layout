@@ -5,3 +5,9 @@ body {
     min-height: 768px;
     font-family: Archivo Narrow;
 }
+
+@media only screen and (min-width: 1440px) and (min-height: 900px) {
+    body {
+        overflow: hidden;
+    }
+}
