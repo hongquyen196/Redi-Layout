@@ -346,7 +346,7 @@
             setTimeout(function() {
                 _this.el.offsetHeight;
                 return addClass(_this.el, 'odometer-animating');
-            }, 0);
+            }, 500);
             return this.value = newValue;
         };
 
