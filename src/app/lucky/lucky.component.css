@@ -75,20 +75,11 @@
     }
     
     .number-container {
-        /* position: absolute;
-    top: 13%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    -webkit-transform: translateZ(0); */
-        padding-top: 10rem;
+        padding-top: 11em;
     }
     
     .number-container .odometer {
         z-index: 1;
-        /* bottom: 0.2em; */
     }
     
     .number-container img {
